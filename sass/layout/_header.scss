@@ -1,0 +1,137 @@
+.header{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+padding-top: 24px;
+padding-bottom: 25px;
+border-bottom:  1px solid #ECECEC;
+max-width: 100%;
+margin: 0 auto;
+}
+
+.header-logo{
+margin-right: 90px;
+outline: none;
+}
+
+.header-list{
+display: flex;
+}
+
+.header-navigation{
+display: flex;
+align-items: center;
+}
+
+.header-item{
+  &:not(:last-child){
+margin-right: 50px;
+  }
+}
+
+.header-container{
+display: flex;
+align-items: center;
+}
+
+.header-connect{
+margin-left: auto;
+}
+
+.header-link.current{
+color: var(--fourth-text-color);
+}
+
+.header-link.active::after{
+content: "";
+width: 100%;
+height: 4px;
+background-color: #2196F3;
+position: absolute;
+display: block;
+bottom: -28px;
+left: 0;
+border-radius: 2px;
+}
+
+.header-link{
+color: var(--header-text-color);
+transition: color 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+position: relative;
+outline: none;
+&:hover,
+&:focus,
+.current{
+color: var(--fourth-text-color);
+}
+}
+
+.header-mail{
+  display: flex;
+  align-items: center;
+  color: var(--second-header-color);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+    &:hover,
+  &:focus{
+  color: var(--fourth-text-color);
+  }
+}
+
+.mail-icon{
+  margin-right: 10px;
+  fill: currentColor;
+    &:hover,
+  &:focus{
+    color: var(--fourth-text-color);
+  }
+}
+
+.phone-icon{
+  margin-right: 10px;
+  fill: currentColor;
+    &:hover,
+  &:focus{
+    color: var(--fourth-text-color);
+  }
+}
+
+.header-tel{
+display: flex;
+align-items: center;
+margin-left: 48px;
+color: var(--second-header-color);
+transition: color 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+outline: none;
+&:hover,
+&:focus{
+color: var(--fourth-text-color)
+}
+}
+
+.header-logo{
+font-family: Raleway, sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+/* identical to box height */
+letter-spacing: 0.03em;
+
+color: #2196F3;
+}
+
+.logo{
+font-family: Raleway, sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+/* identical to box height */
+letter-spacing: 0.03em;
+
+color: #000000;
+}
+
