@@ -1,4 +1,4 @@
-.clients{
+.clients-list__clients{
 font-weight: bold;
 font-size: 36px;
 line-height: 1.17;
@@ -8,11 +8,11 @@ margin-bottom: 50px;
 color: var(--header-text-color);
 }
 
-.clients-list{
+.clients-list__clients-list{
   display: flex;
 }
 
-.clients-link{
+.clients-list__clients-link{
 width: 170px;
 height: 92px;
 border: 1px solid #AFB1B8;
@@ -32,17 +32,17 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
 
-.clients-icon{
+.clients-list__clients-icon{
 transition: fill 250ms;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-.clients-link:hover &,
-.clients-link:focus &,
+.clients-list__clients-link:hover &,
+.clients-list__clients-link:focus &,
 .current{
   fill:#2196F3;
 }
 }
 
-.clients-item{
+.clients-list__clients-item{
 display: flex;
 align-items: center;
 &:not(:last-child){

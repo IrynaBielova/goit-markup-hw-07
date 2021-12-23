@@ -1,4 +1,4 @@
-.about{
+.our-work__title{
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
@@ -7,14 +7,14 @@ margin-bottom: 50px;
 color: var(--second-text-color);
 }
 
-.about-img{
+.our-work__about-img{
 position: relative;
 &:not(:last-child){
 margin-right: 30px;
 }
 }
 
-.about-img-text{
+.our-work__about-img-text{
 font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
