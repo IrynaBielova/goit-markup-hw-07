@@ -8,7 +8,7 @@
   transition: opacity 1000ms, visibility 1000ms;
 }
 
-.modal{
+.modal-window{
   position: absolute;
   top:50%;
   left:50%;
@@ -29,7 +29,7 @@
   }
 }
 
-.modal-close{
+.modal-window__modal-close{
 width: 30px;
 height: 30px;
 background-color:#ffffff;
@@ -53,7 +53,7 @@ fill: #2196F3;
   pointer-events: none;
 }
 
-.modal-title {
+.modal-window__modal-title {
 font-weight: bold;
 font-size: 20px;
 line-height: 1.15;
@@ -63,15 +63,15 @@ color: #212121;
 margin: 40px 40px 12px 40px;
 }
 
-.modal-field{
+.modal-input__modal-field{
   margin: 0px 40px 10px 40px;
  }
 
-.modal-last-field{
+.modal-input__modal-last-field{
  margin: 0px 40px 0px 40px;
 }
 
-.input-wrap {
+.modal-input__input-wrap {
     position: relative;
 }
 
@@ -84,7 +84,7 @@ margin: 40px 40px 12px 40px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input {
+.modal-input__modal-form-input {
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -110,11 +110,11 @@ margin: 40px 40px 12px 40px;
   }
 
 
-.modal-form-input:focus + .input-icon {
+.modal-input__modal-form-input:focus + .input-icon {
     fill: #2196F3;
 }
 
-.modal-form-text {
+.modal-input__modal-form-text {
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -124,7 +124,7 @@ margin: 40px 40px 12px 40px;
     padding: 12px;
 }
 
-.form-input-text {
+.modal-input__form-input-text {
     font-size: 12px;
     line-height: 1.2;
     color: #999999;
@@ -133,14 +133,14 @@ margin: 40px 40px 12px 40px;
 
 }
 
-.modal-btn {
+.button__modal-btn {
   width: 200px;
   height: 50px;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border:none;
-  display: block;
+  display:block;
   margin: 0 auto;
   font-weight: bold;
   font-size: 16px;
@@ -154,7 +154,7 @@ margin: 40px 40px 12px 40px;
   margin-bottom: 40px;
 }
 
-.check-text {
+.modal-input__check-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -166,7 +166,7 @@ margin: 40px 40px 12px 40px;
   margin-bottom: 30px;
 }
 
-.check-item {
+.modal-input__check-item {
     width: 16px;
     height: 15px;
     border: 2px solid #000000;
@@ -177,19 +177,19 @@ margin: 40px 40px 12px 40px;
     justify-content: center;
 }
 
-.check-icon {
+.modal-input__check-icon {
     fill: #ffffff;  
 }
 
-.modal-check:checked + .check-text{
-  .check-item {
+.modal-check:checked + .modal-input__check-text{
+  .modal-input__check-item {
     background-color: #2196F3;
     fill: #ffffff;
     border: none;
   }
 }
 
-.item-link{
+.modal-input__item-link{
   color: #2196F3;
   margin-left: 3px;
 }
